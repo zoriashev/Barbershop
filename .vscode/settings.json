@@ -1,5 +1,12 @@
 {
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true
+    "liveServer.settings.port": 5501,
+    "editor.foldingImportsByDefault": true,
+    "prettier.enableDebugLogs": true,
+    "prettier.ignorePath": "",
+    "prettier.prettierPath": ".prettierrc.json",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
 }
