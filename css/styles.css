@@ -1,0 +1,174 @@
+/* General */
+:root {
+  --primary-color: ##303030;
+  --secondary-color: #555555;
+  --white-color: #ffff;
+  --accent-color: #ff6c00;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+button {
+  cursor: pointer;
+}
+.button {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* color: #FFFFFF; */
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 11.87px 19.96px;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+}
+.headings {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+}
+.light-headings {
+  /* color: var(--white-color); */
+}
+.upper-paragraph {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.lower-paragraph {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.dark-upper-paragraph {
+  color: var(--primary-color);
+}
+.dark-lower-paragraph {
+  color: var(--secondary-color);
+}
+
+/* header */
+
+.nav-links {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  /* color: var(--white-color); */
+}
+.nav-links:hover,
+.nav-links:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
+.tel {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: var(--white-color); */
+}
+
+/* Hero */
+.social-links {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  /* transform: rotate(-89.83deg); */
+}
+.social-links:hover,
+.social-links:focus {
+  color: var(--accent-color);
+}
+
+.hero-heading {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  /* color: var(--white-color); */
+}
+/* About us  */
+.smaller-lower-paragraph {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+/* Prices */
+.amounts {
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+}
+.amounts-description {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: var(--primary-color);
+}
+/* Masters  */
+.masters-name {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+.masters-profession {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* CONTACTS */
+.contacts-links {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contacts-email {
+  text-decoration-line: underline;
+}
+.contacts-paragraph {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+/* FOOTER */
+.footer-paragraph {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
