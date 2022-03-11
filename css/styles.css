@@ -14,6 +14,15 @@ body {
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 130px 0;
+}
 button {
   cursor: pointer;
 }
@@ -27,7 +36,8 @@ button {
   box-sizing: border-box;
   border-radius: 25px;
   background-color: transparent;
-  padding: 11.87px 19.96px;
+  min-width: 160px;
+  padding: 12px 16px;
 }
 .button:hover,
 .button:focus {
@@ -41,9 +51,11 @@ button {
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 .light-headings {
   /* color: var(--white-color); */
+  margin-bottom: 44px;
 }
 .upper-paragraph {
   font-size: 11px;
@@ -51,8 +63,11 @@ button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .lower-paragraph {
+  font-weight: 400;
+
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
@@ -66,6 +81,18 @@ button {
 }
 
 /* header */
+.header {
+  padding: 32px 0;
+}
+.header-container,
+.navigation,
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.logo-header {
+  margin-right: 70px;
+}
 
 .nav-links {
   font-size: 12px;
@@ -79,12 +106,17 @@ button {
 .tel:focus {
   color: var(--accent-color);
 }
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
 .tel {
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   /* color: var(--white-color); */
+  margin-right: 40px;
+  margin-left: auto;
 }
 
 /* Hero */
@@ -116,38 +148,134 @@ button {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
-
+.about-us-container,
+.about-us-imgs-list {
+  display: flex;
+}
+.about-us-imgs {
+  margin-right: 64px;
+}
+.about-us-imgs-item:nth-child(1) {
+  margin-right: 30px;
+}
+.about-us-text .lower-paragraph {
+  margin-bottom: 20px;
+}
+.about-us-text .smaller-lower-paragraph {
+  margin-bottom: 40px;
+}
 /* Prices */
-.amounts {
+
+.prices-div,
+.prices-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-list {
+  width: 585px;
+  padding: 30px 40px;
+}
+.prices-button {
+  display: block;
+  margin: 0 auto;
+}
+/* ADVANTAGES */
+.advantages-amounts {
   font-size: 42px;
   line-height: calc(57 / 42);
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--primary-color);
 }
-.amounts-description {
+.advantages-description {
   font-size: 11px;
   line-height: calc(15 / 11);
   text-align: center;
   color: var(--primary-color);
 }
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
+}
+.advantages-items {
+  width: 170px;
+  min-height: 134px;
+  background-color: #f7f7f7;
+  padding: 21px;
+}
+.advantages-items:nth-child(even) {
+  margin-top: 30px;
+}
+.adv-paragraph {
+  max-width: 460px;
+}
+.advantages-amounts {
+  margin-bottom: 6px;
+  text-align: center;
+}
+.advantages-left,
+.advantages-right {
+  flex-basis: calc((100% - 30px) / 2);
+}
 /* Masters  */
 .masters-name {
+  font-weight: 400;
+
   font-size: 18px;
   line-height: calc(25 / 18);
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  padding-bottom: 10px;
 }
 .masters-profession {
+  font-weight: 400;
   font-size: 14px;
   line-height: calc(19 / 14);
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+.masters-section {
+  background-color: #f7f7f7;
+}
+.masters-section .headings {
+  margin-bottom: 44px;
+}
+.masters-list {
+  display: flex;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+.masters-items {
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100%-3 * 30px) / 3);
+}
+.masters-description {
+  padding-top: 30px;
+}
+
+/* MASTER'S WORK  */
+.masters-work {
+  display: flex;
+}
+.masters-work {
+  margin-right: -30px;
+}
 /* CONTACTS */
 .contacts-links {
+  font-weight: 400;
+
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
