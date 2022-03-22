@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="container head-cont">
     <header class="header">
       <div class="container header-container">
         <nav class="navigation">
@@ -51,9 +52,11 @@
         </nav>
 
         <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="button" type="button">ОНЛАЙН-ЗАПИСЬ</button>
+        <button class="button header-button" type="button">ОНЛАЙН-ЗАПИСЬ</button>
       </div>
+    
     </header>
+  </div>
 
     <main>
       <!-- HERO -->
@@ -90,9 +93,9 @@
               <li class="about-us-imgs-item"> 
                 <img src="./images/about-img-1.jpg" alt="бреют шею" />
               </li>
-              <li>
+              <li class="about-us-imgs-item">
                 <img src="./images/about-img-2.jpg" alt="бреет затылок" />
-              </li class="about-us-imgs-item" >
+              </li >
             </ul>
           </div>
           <div class="about-us-text">
@@ -181,7 +184,7 @@
               <p class="advantages-description">Наград за отличный сервис</p>
             </li>
             <li class="advantages-items">
-              <p class="advantages-amounts">100</pp>
+              <p class="advantages-amounts">100</p>
               <p class="advantages-description">Подарков постоянным клиентам</p>
             </li>
           </ul>     
@@ -340,10 +343,37 @@
           </ul>
         </div>
       </section>
+
       <div class="contacts-container ">
       <section class="contact-form-section">
         <div class="">
           <h2 class="headings light-headings">Онлайн-запись</h2>
+
+          <form class="form" >
+          
+          <div class="contacts-form">
+            <div class="form-field"> 
+            <input class="input" id="name" type="text" placeholder=" ">
+            <label class="label" for="name">Имя</label>
+          </div>
+
+          <div class="form-field"> 
+            <input  class="input" id="tel" type="tel" placeholder=" ">  
+            <label class="label" for="tel">Телефон</label>
+          </div>
+        </div>
+      
+        <div class="form-field comment-field"> 
+            <label class="label" for="comment"></label>
+            <textarea class="textarea" placeholder="Сообщение" name="text" id="comment" rows="10" ></textarea>
+          </div>
+
+<button class="button submit-button" type="submit">отправить</button>
+
+
+          </form>
+
+
         </div>
       </section>
 
@@ -351,9 +381,9 @@
         <div class="">
           <h2 class="headings light-headings">Контакты</h2>
 
-          <address>
-            <ul>
-              <li>
+          <address class="address">
+            <ul class="contacts-list">
+              <li class="contacts-item">
                 <a
                   class="contacts-links"
                   rel="noreferrer noopener"
@@ -362,8 +392,8 @@
                   >ул. Васильковская, 7А Киев, 08132</a
                 >
               </li>
-              <li><a class="contacts-links" href="telto:+380441111111">+38 044 111 11 11</a></li>
-              <li>
+              <li class="contacts-item"><a class="contacts-links" href="telto:+380441111111">+38 044 111 11 11</a></li>
+              <li class="contacts-item">
                 <a class="contacts-links contacts-email" href="mailto:barbershop@email.com"
                   >barbershop@email.com</a
                 >
