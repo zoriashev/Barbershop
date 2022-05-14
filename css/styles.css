@@ -96,10 +96,10 @@ button {
 .header {
   padding: 32px 0;
   position: absolute;
-}
-.head-cont {
-  position: relative;
-}
+  
+  width: 100%;
+  ;}
+
 .header-container,
 .navigation,
 .nav-list {
@@ -296,6 +296,10 @@ button {
   background-color: #f7f7f7;
   padding: 21px;
 }
+.advantages-items:hover, .advantages-items:focus {
+  background-color: #ba7878;
+}
+
 .advantages-items:nth-child(even) {
   margin-top: 30px;
 }
